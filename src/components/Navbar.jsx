@@ -26,7 +26,13 @@ function Navbar() {
 
   return (
     <nav className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
-      <div className="logo">NetStudio</div>
+      <button 
+        className="logo" 
+        onClick={() => scrollToSection('inicio')}
+        style={{ border: 'none', background: 'none', cursor: 'pointer' }}
+      >
+        NetStudio
+      </button>
       <div className="nav-links">
         <button onClick={() => scrollToSection('inicio')} className="nav-link">Inicio</button>
         <button onClick={() => scrollToSection('servicios')} className="nav-link">Servicios</button>

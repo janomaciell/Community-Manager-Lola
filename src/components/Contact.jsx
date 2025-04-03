@@ -83,7 +83,7 @@ function Contact() {
             <div className="info-content">
               <h4>Email</h4>
               <p>
-                <a href="mailto:janomaciel1@gmail.com">janomaciel1@gmail.com</a>
+                <a href="mailto:janomaciel1@gmail.com">netstudio.lp@gmail.com</a>
               </p>
             </div>
           </motion.div>
@@ -101,7 +101,7 @@ function Contact() {
             <div className="info-content">
               <h4>Teléfono</h4>
               <p>
-                <a href="tel:+5491123456789">+54 9 11 2345-6789</a>
+                <a href="tel:+5492267405599">+54 9 2267-405599</a>
               </p>
             </div>
           </motion.div>
@@ -118,7 +118,7 @@ function Contact() {
             </div>
             <div className="info-content">
               <h4>Ubicación</h4>
-              <p>Buenos Aires, Argentina</p>
+              <p>Pinamar , Buenos Aires, Argentina</p>
             </div>
           </motion.div>
 
