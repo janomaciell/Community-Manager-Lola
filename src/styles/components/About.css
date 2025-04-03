@@ -1,6 +1,6 @@
 .about-section {
   padding: 5rem 5%;
-  background-color: #f9f9f9;
+  background-color: #F4F4F6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,13 +29,13 @@
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #000000;
   font-family: 'Playfair Display', serif;
 }
 
 .about-text {
   font-size: 1.1rem;
-  color: #666;
+  color: #66666E;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
@@ -43,7 +43,7 @@
 .about-signature {
   font-size: 1.5rem;
   font-family: 'Playfair Display', serif;
-  color: #FF5A5F;
+  color: #000000;
   margin-top: 2rem;
 }
 
@@ -54,13 +54,13 @@
 }
 
 .social-links a {
-  color: #333;
+  color: #66666E;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #FF5A5F;
+  color: #000000;
 }
 
 @media (min-width: 768px) {

@@ -7,14 +7,14 @@
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #000000;
   font-family: 'Playfair Display', serif;
   text-align: center;
 }
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #666;
+  color: #66666E;
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
@@ -49,35 +49,35 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgba(255, 90, 95, 0.1);
+  background-color: rgba(102, 102, 110, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
-  color: #FF5A5F;
+  color: #000000;
   font-size: 1.3rem;
 }
 
 .info-content h4 {
   font-size: 1.1rem;
-  color: #333;
+  color: #000000;
   margin-bottom: 0.3rem;
 }
 
 .info-content p {
   font-size: 1rem;
-  color: #666;
+  color: #66666E;
   line-height: 1.5;
 }
 
 .info-content a {
-  color: #666;
+  color: #66666E;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .info-content a:hover {
-  color: #FF5A5F;
+  color: #000000;
 }
 
 .contact-form form {
@@ -112,7 +112,7 @@
 
 .form-input:focus,
 .form-textarea:focus {
-  border-color: #FF5A5F;
+  border-color: #000000;
 }
 
 .form-textarea {
@@ -122,8 +122,8 @@
 
 .submit-button {
   padding: 0.8rem 2rem;
-  background-color: #FF5A5F;
-  color: white;
+  background-color: #000000;
+  color: #F4F4F6;
   border: none;
   border-radius: 30px;
   font-size: 1rem;
@@ -136,15 +136,15 @@
 
 .submit-button:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(255, 90, 95, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .form-error {
-  color: #FF5A5F;
+  color: #000000;
   font-size: 0.85rem;
   margin-top: 0.5rem;
   padding: 0.5rem;
-  background-color: rgba(255, 90, 95, 0.1);
+  background-color: rgba(102, 102, 110, 0.1);
   border-radius: 4px;
   display: flex;
   align-items: center;

@@ -1,6 +1,6 @@
 .services-section {
   padding: 5rem 5%;
-  background-color: #fff;
+  background-color: #F4F4F6;
   text-align: center;
   scroll-margin-top: 80px;
 }
@@ -8,13 +8,13 @@
 .services-section__title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #000000;
   font-family: 'Playfair Display', serif;
 }
 
 .services-section__subtitle {
   font-size: 1.1rem;
-  color: #666;
+  color: #66666E;
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
@@ -29,7 +29,7 @@
 }
 
 .service-card {
-  background-color: #f9f9f9;
+  background-color: #fff;
   padding: 2.5rem 2rem;
   border-radius: 10px;
   text-align: center;
@@ -39,22 +39,23 @@
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #E6E6E9;
 }
 
 .service-icon {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #FF5A5F;
+  color: #000000;
 }
 
 .service-title {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #000000;
 }
 
 .service-description {
   font-size: 0.95rem;
-  color: #666;
+  color: #66666E;
   line-height: 1.6;
 }

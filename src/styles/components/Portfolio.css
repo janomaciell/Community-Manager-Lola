@@ -1,6 +1,6 @@
 .portfolio-section {
   padding: 5rem 5%;
-  background-color: #fff;
+  background-color: #F4F4F6;
   text-align: center;
   scroll-margin-top: 80px;
 }
@@ -8,13 +8,13 @@
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #333;
+  color: #000000;
   font-family: 'Playfair Display', serif;
 }
 
 .section-subtitle {
   font-size: 1.1rem;
-  color: #666;
+  color: #66666E;
   margin-bottom: 3rem;
   max-width: 600px;
   margin-left: auto;
@@ -32,8 +32,8 @@
 .filter-button {
   padding: 0.5rem 1.5rem;
   background-color: transparent;
-  color: #333;
-  border: 1px solid #ddd;
+  color: #66666E;
+  border: 1px solid #9999A1;
   border-radius: 30px;
   font-size: 0.9rem;
   cursor: pointer;
@@ -41,13 +41,13 @@
 }
 
 .filter-button:hover {
-  background-color: #f9f9f9;
+  background-color: #E6E6E9;
 }
 
 .filter-button.active {
-  background-color: #FF5A5F;
-  color: white;
-  border-color: #FF5A5F;
+  background-color: #000000;
+  color: #F4F4F6;
+  border-color: #000000;
 }
 
 .projects-grid {
@@ -85,12 +85,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 90, 95, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #F4F4F6;
   opacity: 0;
   transition: opacity 0.3s ease;
   padding: 1.5rem;
@@ -108,8 +108,8 @@
 
 .project-overlay button {
   padding: 0.5rem 1.5rem;
-  background-color: white;
-  color: #FF5A5F;
+  background-color: #F4F4F6;
+  color: #000000;
   border: none;
   border-radius: 30px;
   font-size: 0.9rem;
@@ -118,6 +118,6 @@
 }
 
 .project-overlay button:hover {
-  background-color: #f1f1f1;
+  background-color: #E6E6E9;
   transform: translateY(-3px);
 }

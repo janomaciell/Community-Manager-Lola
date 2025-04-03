@@ -1,6 +1,6 @@
 .footer-container {
-  background-color: #333;
-  color: white;
+  background-color: #000000;
+  color: #F4F4F6;
   padding: 4rem 5% 2rem;
   font-family: 'Roboto', sans-serif; /* Added a clean font */
 }
@@ -21,7 +21,7 @@
 }
 
 .footer-description {
-  color: #ccc;
+  color: #9999A1;
   line-height: 1.8; /* Increased line height for readability */
   margin-bottom: 2rem;
   font-size: 1rem; /* Ensure readable font size */
@@ -41,7 +41,7 @@
   left: 0;
   width: 40px;
   height: 2px;
-  background-color: #FF5A5F;
+  background-color: #9999A1;
 }
 
 .footer-links {
@@ -55,7 +55,7 @@
 }
 
 .footer-link a, .footer-button {
-  color: #ccc;
+  color: #9999A1;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 1rem; /* Consistent font size */
@@ -66,7 +66,7 @@
 }
 
 .footer-link a:hover, .footer-button:hover {
-  color: #FF5A5F;
+  color: #E6E6E9;
 }
 
 .social-links {
@@ -82,13 +82,13 @@
   width: 45px; /* Larger icons */
   height: 45px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+  background-color: #66666E;
+  color: #F4F4F6;
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background-color: #FF5A5F;
+  background-color: #9999A1;
   transform: translateY(-5px);
 }
 
@@ -100,9 +100,9 @@
 .footer-bottom {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #66666E;
   text-align: center;
-  color: #999;
+  color: #9999A1;
   font-size: 0.9rem;
   font-style: italic; /* Add a subtle style to the copyright */
 }
