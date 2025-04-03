@@ -3,6 +3,11 @@ import { motion } from 'framer-motion';
 import '../styles/components/Hero.css';
 
 function Hero() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contacto');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="inicio" className="hero-section">
       <div className="hero-content">
@@ -29,6 +34,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={scrollToContact}
         >
           Impulsa tu marca
         </motion.button>
