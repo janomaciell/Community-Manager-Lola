@@ -9,6 +9,8 @@
   right: 0;
   z-index: 1000;
   transition: background-color 0.3s ease;
+  background-color: rgba(230, 230, 233, 0.6); /* 0.3 es el nivel de transparencia */
+
 }
 
 .nav-container.scrolled {

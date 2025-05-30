@@ -7,36 +7,36 @@ function Services() {
   const services = [
     {
       icon: <FiInstagram />,
-      title: 'Gestión de Redes Sociales',
-      description: 'Creación y administración completa de tus redes sociales para maximizar tu presencia digital y conectar con tu audiencia.'
+      title: 'Social Media Management',
+      description: 'Complete creation and management of your social media to maximize your digital presence and connect with your audience.'
     },
     {
       icon: <FiLayout />,
-      title: 'Diseño de Contenido',
-      description: 'Diseño visual atractivo y coherente que refleja la identidad de tu marca y capta la atención de tus seguidores.'
+      title: 'Content Design',
+      description: 'Attractive and consistent visual design that reflects your brand identity and captures your audience’s attention.'
     },
     {
       icon: <FiTrendingUp />,
-      title: 'Estrategia Digital',
-      description: 'Desarrollo de estrategias personalizadas para alcanzar tus objetivos de negocio a través de los canales digitales.'
+      title: 'Digital Strategy',
+      description: 'Development of personalized strategies to achieve your business goals through digital channels.'
     },
     {
       icon: <FiTarget />,
-      title: 'Campañas Publicitarias',
-      description: 'Creación y gestión de campañas efectivas para aumentar el alcance y conversión de tus productos o servicios.'
+      title: 'Advertising Campaigns',
+      description: 'Creation and management of effective campaigns to increase the reach and conversion of your products or services.'
     },
     {
       icon: <FiBarChart2 />,
-      title: 'Análisis y Optimización',
-      description: 'Monitoreo constante de resultados para optimizar estrategias y maximizar el retorno de inversión.'
+      title: 'Analytics & Optimization',
+      description: 'Constant performance monitoring to optimize strategies and maximize return on investment.'
     }
   ];
 
   return (
-    <section id="servicios" className="services-section">
-      <h2 className="services-section__title">Nuestros Servicios</h2>
+    <section id="services" className="services-section">
+      <h2 className="services-section__title">Our Services</h2>
       <p className="services-section__subtitle">
-        Soluciones completas para potenciar tu marca en el mundo digital
+        Complete solutions to boost your brand in the digital world
       </p>
       <div className="services-grid">
         {services.map((service, index) => (

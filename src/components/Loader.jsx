@@ -15,7 +15,7 @@ function Loader() {
             strokeWidth="5"
           />
         </svg>
-        <div className="loader-text">NetStudio</div>
+        <div className="loader-text">Lola Pavon</div>
       </div>
     </div>
   );

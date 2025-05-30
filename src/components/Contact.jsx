@@ -28,18 +28,17 @@ function Contact() {
     setIsSending(true);
     setError('');
 
-    // EmailJS send function
     emailjs
       .send(
-        'service_7a52up1', // Replace with your EmailJS Service ID
-        'template_afshotn', // Replace with your EmailJS Template ID
+        'service_7a52up1',
+        'template_afshotn',
         {
           name: formData.name,
           email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'njKaLQvBNkUWF0QtR' // Replace with your EmailJS User ID
+        'njKaLQvBNkUWF0QtR'
       )
       .then(
         (result) => {
@@ -50,22 +49,22 @@ function Contact() {
             subject: '',
             message: '',
           });
-          alert('¡Mensaje enviado! Nos pondremos en contacto contigo pronto.');
+          alert('Message sent! I will get back to you soon.');
           setIsSending(false);
         },
         (error) => {
           console.error('Error sending email:', error.text);
-          setError('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+          setError('There was an error sending your message. Please try again.');
           setIsSending(false);
         }
       );
   };
 
   return (
-    <section id="contacto" className="contact-section">
-      <h2 className="section-title">Contacto</h2>
+    <section id="contact" className="contact-section">
+      <h2 className="section-title">Contact</h2>
       <p className="section-subtitle">
-        ¿Listo para potenciar tu marca? Ponte en contacto conmigo
+        Ready to elevate your brand? Get in touch with me.
       </p>
 
       <div className="contact-wrapper">
@@ -83,7 +82,7 @@ function Contact() {
             <div className="info-content">
               <h4>Email</h4>
               <p>
-                <a href="mailto:janomaciel1@gmail.com">netstudio.lp@gmail.com</a>
+                <a href="mailto:Lolapavonn@gmail.com">Lolapavonn@gmail.com</a>
               </p>
             </div>
           </motion.div>
@@ -99,9 +98,9 @@ function Contact() {
               <FiPhone />
             </div>
             <div className="info-content">
-              <h4>Teléfono</h4>
+              <h4>Phone</h4>
               <p>
-                <a href="tel:+5492267405599">+54 9 2267-405599</a>
+                <a href="tel:+5492255508535">+54 9 2255-508535</a>
               </p>
             </div>
           </motion.div>
@@ -117,8 +116,8 @@ function Contact() {
               <FiMapPin />
             </div>
             <div className="info-content">
-              <h4>Ubicación</h4>
-              <p>Pinamar , Buenos Aires, Argentina</p>
+              <h4>Location</h4>
+              <p>Pinamar, Buenos Aires, Argentina</p>
             </div>
           </motion.div>
 
@@ -136,11 +135,11 @@ function Contact() {
               <h4>Instagram</h4>
               <p>
                 <a
-                  href="https://instagram.com/netstudio.ar"
+                  href="https://instagram.com/Lolaapavon"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @netstudio.ar
+                  @Lolaapavon
                 </a>
               </p>
             </div>
@@ -150,7 +149,7 @@ function Contact() {
         <div className="contact-form">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label className="form-label">Nombre</label>
+              <label className="form-label">Name</label>
               <input
                 className="form-input"
                 type="text"
@@ -174,7 +173,7 @@ function Contact() {
             </div>
 
             <div className="form-group">
-              <label className="form-label">Asunto</label>
+              <label className="form-label">Subject</label>
               <input
                 className="form-input"
                 type="text"
@@ -186,7 +185,7 @@ function Contact() {
             </div>
 
             <div className="form-group">
-              <label className="form-label">Mensaje</label>
+              <label className="form-label">Message</label>
               <textarea
                 className="form-textarea"
                 name="message"
@@ -205,7 +204,7 @@ function Contact() {
               whileTap={{ scale: 0.95 }}
               disabled={isSending}
             >
-              {isSending ? 'Enviando...' : 'Enviar Mensaje'}
+              {isSending ? 'Sending...' : 'Send Message'}
             </motion.button>
           </form>
         </div>

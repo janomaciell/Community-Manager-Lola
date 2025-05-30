@@ -28,18 +28,18 @@ function Navbar() {
     <nav className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
       <button 
         className="logo" 
-        onClick={() => scrollToSection('inicio')}
+        onClick={() => scrollToSection('home')}
         style={{ border: 'none', background: 'none', cursor: 'pointer' }}
       >
-        NetStudio
+        LP
       </button>
       <div className="nav-links">
-        <button onClick={() => scrollToSection('inicio')} className="nav-link">Inicio</button>
-        <button onClick={() => scrollToSection('servicios')} className="nav-link">Servicios</button>
-        <button onClick={() => scrollToSection('sobre-mi')} className="nav-link">Sobre mí</button>
+        <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
+        <button onClick={() => scrollToSection('services')} className="nav-link">Services</button>
+        <button onClick={() => scrollToSection('about')} className="nav-link">About Me</button>
         <button onClick={() => scrollToSection('portfolio')} className="nav-link">Portfolio</button>
-        <button onClick={() => scrollToSection('testimonios')} className="nav-link">Testimonios</button>
-        <button onClick={() => scrollToSection('contacto')} className="nav-link">Contacto</button>
+        <button onClick={() => scrollToSection('testimonials')} className="nav-link">Testimonials</button>
+        <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
       </div>
       <div className="mobile-menu-icon" onClick={() => setMobileMenuOpen(true)}>
         <FiMenu />
@@ -55,12 +55,12 @@ function Navbar() {
           <div className="close-icon" onClick={() => setMobileMenuOpen(false)}>
             <FiX />
           </div>
-          <button onClick={() => scrollToSection('inicio')} className="mobile-nav-link">Inicio</button>
-          <button onClick={() => scrollToSection('servicios')} className="mobile-nav-link">Servicios</button>
-          <button onClick={() => scrollToSection('sobre-mi')} className="mobile-nav-link">Sobre mí</button>
+          <button onClick={() => scrollToSection('home')} className="mobile-nav-link">Home</button>
+          <button onClick={() => scrollToSection('services')} className="mobile-nav-link">Services</button>
+          <button onClick={() => scrollToSection('about-me')} className="mobile-nav-link">About Me</button>
           <button onClick={() => scrollToSection('portfolio')} className="mobile-nav-link">Portfolio</button>
-          <button onClick={() => scrollToSection('testimonios')} className="mobile-nav-link">Testimonios</button>
-          <button onClick={() => scrollToSection('contacto')} className="mobile-nav-link">Contacto</button>
+          <button onClick={() => scrollToSection('testimonials')} className="mobile-nav-link">Testimonials</button>
+          <button onClick={() => scrollToSection('contact')} className="mobile-nav-link">Contact</button>
         </motion.div>
       )}
     </nav>

@@ -4,12 +4,15 @@ import '../styles/components/Hero.css';
 
 function Hero() {
   const scrollToContact = () => {
-    const contactSection = document.getElementById('contacto');
+    const contactSection = document.getElementById('contact');
     contactSection.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <section id="inicio" className="hero-section">
+    <section id="home" className="hero-section">
+
+
+      
       <div className="hero-content">
         <motion.h1
           className="hero-title"
@@ -17,7 +20,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Potenciando marcas con <span>estrategias digitales</span>
+          Empowering brands with <span>digital strategies</span>
         </motion.h1>
         <motion.p
           className="hero-subtitle"
@@ -25,7 +28,7 @@ function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Community Manager & Social Media Specialist. Ayudando a tu negocio a crecer con contenido que conecta y estrategias que convierten.
+          Community Manager & Social Media Specialist. Helping your business grow with content that connects and strategies that convert.
         </motion.p>
         <motion.button
           className="cta-button"
@@ -36,7 +39,7 @@ function Hero() {
           whileTap={{ scale: 0.95 }}
           onClick={scrollToContact}
         >
-          Impulsa tu marca
+          Boost your brand
         </motion.button>
       </div>
       <motion.div

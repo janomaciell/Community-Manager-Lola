@@ -1,93 +1,131 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { X } from 'lucide-react';
 import '../styles/components/Portfolio.css';
 
 function Portfolio() {
   const [filter, setFilter] = useState('all');
-  
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const projects = [
     {
       id: 1,
-      title: 'Boutique de Moda',
-      category: 'ecommerce',
-      description: 'Gestión de redes sociales y estrategia de contenido para marca de moda.',
-      image: '/images/portfolio-1.jpg'
+      title: 'Breakfast Experience',
+      category: 'hotel',
+      description: 'Guest enjoying a peaceful morning breakfast in our elegant dining area, showcasing our commitment to exceptional hospitality.',
+      image: '/images/soleado-desayuno.jpg'
     },
     {
       id: 2,
-      title: 'Café Local',
-      category: 'food',
-      description: 'Desarrollo de identidad digital y contenidos para cafetería de especialidad.',
-      image: '/images/portfolio-2.jpg'
+      title: 'Social Dining',
+      category: 'hotel',
+      description: 'A group of guests sharing stories and laughter during breakfast, highlighting our welcoming communal spaces.',
+      image: '/images/soleado-desayuno2.jpg'
     },
     {
       id: 3,
-      title: 'Estudio de Yoga',
-      category: 'service',
-      description: 'Campañas publicitarias y contenido para estudio de bienestar y yoga.',
-      image: '/images/portfolio-3.jpg'
+      title: 'Breakfast Buffet',
+      category: 'hotel',
+      description: 'Guest selecting from our diverse breakfast buffet, featuring fresh and locally sourced ingredients.',
+      image: '/images/soleado-desayuno3.jpeg'
     },
     {
       id: 4,
-      title: 'Productos Orgánicos',
-      category: 'ecommerce',
-      description: 'Estrategia integral de marketing digital para marca de cosmética natural.',
-      image: '/images/portfolio-4.jpg'
+      title: 'Luxury Accommodation',
+      category: 'hotel',
+      description: 'Premium room featuring plush bedding and modern amenities for the ultimate comfort.',
+      image: '/images/soleado-habitacion.jpeg'
     },
     {
       id: 5,
-      title: 'Consultora Financiera',
-      category: 'service',
-      description: 'Gestión de LinkedIn y estrategia de contenido profesional.',
-      image: '/images/portfolio-5.jpg'
+      title: 'Scenic Views',
+      category: 'hotel',
+      description: 'Breathtaking views from our guest rooms, offering a perfect blend of comfort and natural beauty.',
+      image: '/images/soleado1.jpeg'
     },
     {
       id: 6,
-      title: 'Restaurante Gourmet',
-      category: 'food',
-      description: 'Fotografía de producto y gestión de redes sociales.',
-      image: '/images/portfolio-6.jpg'
+      title: 'Smart Access',
+      category: 'hotel',
+      description: 'Modern digital door lock system for enhanced security and convenience.',
+      image: '/images/soleado-puerta.jpeg'
+    },
+    {
+      id: 7,
+      title: 'Keycard Access',
+      category: 'hotel',
+      description: 'Secure and easy room access with our advanced keycard system.',
+      image: '/images/soleado-puerta2.jpg'
+    },
+    {
+      id: 8,
+      title: 'beach resort',
+      category: 'balneario',
+      description: 'Aerial view of our exclusive beach resort and wellness center.',
+      image: '/images/balneario-dron2.jpg'
+    },
+    {
+      id: 9,
+      title: 'Room Service',
+      category: 'hotel',
+      description: 'Meticulously prepared room with premium linens and thoughtful touches.',
+      image: '/images/soleado-habitacion-3.jpg'
+    },
+    {
+      id: 10,
+      title: 'Beach Resort Aerial View',
+      category: 'balneario',
+      description: 'A breathtaking aerial view of the beach resort captured by drone, highlighting the full layout, modern architecture, and its stunning location by the shoreline.',
+      image: '/images/balneario-dron.jpg'
+    },
+    {
+      id: 11,
+      title: 'Beach Resort Exterior',
+      category: 'balneario',
+      description: 'Elegant exterior of the beach resort featuring contemporary design, expansive glass facades, and soft ambient lighting, nestled within a scenic coastal setting.',
+      image: '/images/balneario.jpg'
     }
+
   ];
-  
-  const filteredProjects = filter === 'all' 
-    ? projects 
+
+  const filteredProjects = filter === 'all'
+    ? projects
     : projects.filter(project => project.category === filter);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
 
   return (
     <section id="portfolio" className="portfolio-section">
-      <h2 className="section-title">Portfolio</h2>
+      <h2 className="section-title">Our Hotel Gallery</h2>
       <p className="section-subtitle">
-        Algunos de los proyectos en los que he trabajado
+        Experience luxury and comfort through our carefully curated spaces
       </p>
-      
+
       <div className="filter-buttons">
         <button 
           className={`filter-button ${filter === 'all' ? 'active' : ''}`}
           onClick={() => setFilter('all')}
         >
-          Todos
+          All
         </button>
         <button 
-          className={`filter-button ${filter === 'ecommerce' ? 'active' : ''}`}
-          onClick={() => setFilter('ecommerce')}
+          className={`filter-button ${filter === 'balneario' ? 'active' : ''}`}
+          onClick={() => setFilter('balneario')}
         >
-          E-commerce
+          beach resort
         </button>
         <button 
-          className={`filter-button ${filter === 'service' ? 'active' : ''}`}
-          onClick={() => setFilter('service')}
+          className={`filter-button ${filter === 'hotel' ? 'active' : ''}`}
+          onClick={() => setFilter('hotel')}
         >
-          Servicios
-        </button>
-        <button 
-          className={`filter-button ${filter === 'food' ? 'active' : ''}`}
-          onClick={() => setFilter('food')}
-        >
-          Gastronomía
+          hotel
         </button>
       </div>
-      
+
       <div className="projects-grid">
         {filteredProjects.map((project, index) => (
           <motion.div
@@ -102,11 +140,33 @@ function Portfolio() {
             <div className="project-overlay">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <button>Ver Proyecto</button>
+              <button onClick={() => {
+                setSelectedImage(project.image);
+                setIsModalOpen(true);
+              }}>
+                View Larger
+              </button>
             </div>
           </motion.div>
         ))}
       </div>
+
+      {isModalOpen && (
+        <motion.div 
+          className="modal-overlay"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          onClick={closeModal}
+        >
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close-button" onClick={closeModal}>
+              <X size={24} />
+            </button>
+            <img src={selectedImage} alt="Project preview" />
+          </div>
+        </motion.div>
+      )}
     </section>
   );
 }

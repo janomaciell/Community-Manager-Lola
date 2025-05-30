@@ -82,13 +82,13 @@
   width: 45px; /* Larger icons */
   height: 45px;
   border-radius: 50%;
-  background-color: #66666E;
-  color: #F4F4F6;
+  background-color: #ffffff;
+  color: #000000;
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background-color: #9999A1;
+  background-color: #636363;
   transform: translateY(-5px);
 }
 

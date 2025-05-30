@@ -4,7 +4,9 @@ import '../styles/components/About.css';
 
 function About() {
   return (
-    <section id="sobre-mi" className="about-section">
+    
+
+    <section id="about" className="about-section">
       <motion.div
         className="about-image"
         initial={{ opacity: 0, x: -50 }}
@@ -12,10 +14,10 @@ function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true, margin: "-100px" }}
       >
-        <img src="/images/lola-pavon.jpg" alt="Lola Pavon - Community Manager" />
+        <img src="/images/lola-pavon.jpeg" alt="Lola Pavon - Community Manager" />
       </motion.div>
       <div className="about-content">
-        <h2 className="section-title">Sobre mí</h2>
+        <h2 className="section-title">About Me</h2>
         <motion.p
           className="about-text"
           initial={{ opacity: 0, y: 30 }}
@@ -23,7 +25,7 @@ function About() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          Soy Lola Pavon, apasionada por la comunicación digital y el marketing estratégico. Me especializo en ayudar a marcas y emprendedores a destacarse en el mundo digital mediante estrategias personalizadas y contenido de valor.
+          I’m a dedicated Community Manager passionate about building authentic digital connections. I focus on crafting personalized strategies that help brands grow and engage meaningfully with their audience.
         </motion.p>
         <motion.p
           className="about-text"
@@ -32,7 +34,7 @@ function About() {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          En NetStudio, mi objetivo es convertir tu presencia digital en una herramienta efectiva para tu negocio, creando conexiones auténticas con tu audiencia y generando resultados tangibles.
+          With a creative and strategic mindset, I leverage my knowledge of social media trends and digital marketing tools to elevate brands and foster loyal communities.
         </motion.p>
         <motion.p
           className="about-text"
@@ -41,7 +43,7 @@ function About() {
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          Con experiencia en diversos sectores, desde moda y belleza hasta servicios profesionales y productos de consumo, mi enfoque se basa en entender profundamente cada negocio para crear estrategias que realmente funcionen.
+          My commitment to understanding each brand's unique voice allows me to design campaigns that resonate and create lasting impact in the digital space.
         </motion.p>
         <motion.h3
           className="about-signature"
@@ -53,8 +55,12 @@ function About() {
           Lola Pavon
         </motion.h3>
       </div>
+      
     </section>
+
+    
   );
+
 }
 
 export default About;
