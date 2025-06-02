@@ -28,28 +28,28 @@ function Portfolio() {
       title: 'Breakfast Buffet',
       category: 'hotel',
       description: 'Guest selecting from our diverse breakfast buffet, featuring fresh and locally sourced ingredients.',
-      image: '/images/soleado-desayuno3.jpeg'
+      image: '/images/soleado-desayuno3.JPEG'
     },
     {
       id: 4,
       title: 'Luxury Accommodation',
       category: 'hotel',
       description: 'Premium room featuring plush bedding and modern amenities for the ultimate comfort.',
-      image: '/images/soleado-habitacion.jpeg'
+      image: '/images/soleado-habitacion.JPEG'
     },
     {
       id: 5,
       title: 'Scenic Views',
       category: 'hotel',
       description: 'Breathtaking views from our guest rooms, offering a perfect blend of comfort and natural beauty.',
-      image: '/images/soleado1.jpeg'
+      image: '/images/soleado1.JPEG'
     },
     {
       id: 6,
       title: 'Smart Access',
       category: 'hotel',
       description: 'Modern digital door lock system for enhanced security and convenience.',
-      image: '/images/soleado-puerta.jpeg'
+      image: '/images/soleado-puerta.JPEG'
     },
     {
       id: 7,
@@ -86,7 +86,6 @@ function Portfolio() {
       description: 'Elegant exterior of the beach resort featuring contemporary design, expansive glass facades, and soft ambient lighting, nestled within a scenic coastal setting.',
       image: '/images/balneario.jpg'
     }
-
   ];
 
   const filteredProjects = filter === 'all'
